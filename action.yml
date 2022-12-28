@@ -1,0 +1,23 @@
+name: "Pterodactyl Power Action"
+description: "Github Action to automatically send a power action to a Pterodactyl server"
+author: "outsparkled"
+branding:
+  color: blue
+  icon: server
+inputs:
+  panel-url:
+    description: "The URL of the panel"
+    required: true
+  server-id:
+    description: "The ID of the server you want to send a power action to"
+    required: true
+  bearer-token:
+    description: "The bearer token to auth with, this will usually be your Pterodactyl API key"
+    required: true
+  power-action:
+    description: "The power action to send. Defaults to 'restart'"
+    required: false
+    default: "restart"
+runs:
+  using: "node16"
+  main: "dist/index.js"

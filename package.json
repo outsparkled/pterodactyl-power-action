@@ -1,0 +1,26 @@
+{
+  "name": "pterodactyl-power-action",
+  "version": "0.1.0",
+  "description": "Github Action to automatically send a power action to a Pterodactyl server",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js --license licenses.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outsparkled/pterodactyl-power-action.git"
+  },
+  "author": "outsparkled",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/outsparkled/pterodactyl-power-action/issues"
+  },
+  "homepage": "https://github.com/outsparkled/pterodactyl-power-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "node-fetch": "2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.0"
+  }
+}
