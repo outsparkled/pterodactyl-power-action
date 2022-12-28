@@ -15,12 +15,12 @@ An example workflow for the scenario described above might look like this:
 
 ```yaml
 name: My Pterodatyl Restarter
-on: [push]
+on: [ push ]
 jobs:
   restart-server:
     runs-on: ubuntu-latest
     steps:
-      - name: restart step
+      - name: restart
       - uses: outsparkled/pterodactyl-power-action@main
         with:
           panel-url: 'https://panel.example.com'
