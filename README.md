@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: restart
-      - uses: outsparkled/pterodactyl-power-action@main
+        uses: outsparkled/pterodactyl-power-action@v0.1.0
         with:
           panel-url: 'https://panel.example.com'
           server-id: ${{ secrets.SERVER_ID }}
