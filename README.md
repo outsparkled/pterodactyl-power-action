@@ -14,7 +14,7 @@ Please refer to [this article](https://docs.github.com/en/actions/quickstart) fo
 An example workflow for the scenario described above might look like this:
 
 ```yaml
-name: My Pterodatyl Restarter
+name: My Pterodactyl Restarter
 on: [ push ]
 jobs:
   restart-server:
